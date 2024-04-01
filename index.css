@@ -1,0 +1,276 @@
+body {
+    margin: 0 auto;
+    font-family: "Indie Flower", cursive;
+} 
+
+.div-header {
+    margin: 0 auto;
+    width: 100%;
+    height: 170px;
+    background-image: url("images/bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Typography*/
+
+h1 {
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 48px 48px 0px 48px;
+    letter-spacing: 1px;
+    color: #212E14;
+}
+
+.modal h1 {
+    font-size: 32px;
+    padding: 0 0 32px 0;
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+}
+
+.body-text {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+}
+
+.p-caption {
+    margin: 0;
+    font-size: 20px;
+    padding-left: 48px;
+}
+
+.emoji {
+    margin: 0;
+}
+
+.p-ingredients {
+    margin: 0 0 8px 0;
+    color: #8B8B8B;
+    font-size: 12px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.p-price {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.error-message {
+    color:#A30A0A;
+}
+
+/*div-styling*/
+
+.content-under-header {
+    display: flex;
+    gap: 24px;
+    margin: 0 48px;
+}
+
+.div-menu-item-list {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 16px;
+}
+
+.div-menu-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 24px 24px 12px 24px;
+   border-bottom: 1px solid #DEDEDE;
+
+}
+
+.div-menu-item-content-right-side {
+display: flex;
+gap: 24px;   
+}
+
+.div-emoji {
+    margin: 0;
+    font-size: 80px;
+}
+
+#your-order-section {
+    background-color: #E5F1DF;
+    border-radius: 16px;
+    margin: 48px auto;
+    padding: 48px;
+    width: 600px;
+    visibility: hidden;
+    text-align: center;
+}
+
+.item-in-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity-and-remove-btn {
+    display: flex;
+}
+
+.quantity-and-remove-btn p {
+    visibility: hidden;
+    display: none;
+    padding-right: 4px;
+}
+
+.total-price-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid #8B8B8B;
+}
+
+.item-in-cart-left-content {  
+    display: flex;
+    gap: 8px;
+}
+
+
+
+/*Interaction*/
+
+.add-btn {
+    margin: 0;
+    font-size: 32px;
+    font-style: normal;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+    border: 1.5px solid #DEDEDE;
+    cursor: pointer;
+
+}
+
+.add-btn:hover{
+    background-color: #FFFBD4;
+    border: 1.5px solid #EFE08D;
+}
+
+.submit-btn {
+    background-color: #AED6A1;
+    color: #212E14;
+    padding: 12px 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #335815;
+    color:white;
+}
+
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    color:#8B8B8B;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    color: #A30A0A;
+}
+
+input {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #757575;
+    border-radius: 8px;
+    height: 48px;
+    padding: 12px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #E0C01B;
+    box-shadow: 0 0 5px #E0C01B;
+}
+/*Modalen*/
+
+.modal {
+    display: none; /* Skjul modalen som standard */
+    position: fixed; /* Plasser modalen i forhold til vinduet */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full høyde */
+    background-color: rgba(0,0,0,0.25); /* Semi-transparent bakgrunn */
+  }
+  
+  /* Style for modalinnholdet */
+  .modal-sheet {
+    display: flex;
+    background-color: white;
+    margin: 15% auto; /* Plasser modalen sentralt */
+    padding: 32px 24px 32px 24px;
+    border-radius: 16px;
+    width: 350px; /* Sett bredde på modalinnholdet */
+  }
+
+  .modal-content {
+    margin: 0 auto;
+  }
+
+  .div-input-from-user {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .div-input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+
+  .div-label-and-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  #cvv-input{
+width: 60px;
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 16px;
+    padding-top: 48px;
+    
+  }
+
+  .btn-container button {
+    flex-grow: 1;
+  }
+  
+  /* Style for lukkeknappen */
+  .dismiss-btn {
+    background-color: white;
+    color: #212E14;
+    padding: 12px 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #AED6A1;
+    cursor: pointer;
+
+  }
+
+  .dismiss-btn:hover {
+    background-color: #335815;
+    color:white;
+    border: 1px solid #335815;
+  }
