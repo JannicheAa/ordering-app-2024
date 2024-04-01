@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     font-family: "Indie Flower", cursive;
+    user-select: none;
 } 
 
 .div-header {
