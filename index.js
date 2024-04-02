@@ -59,6 +59,7 @@ payBtnEl.addEventListener("click", function (e) {
       "Vennligst fyll ut alle feltene.";
   } else {
     const name = nameInputEl.value;
+    yourOrderSectionEl.style.height = "20px";
     renderMessage(name);
   }
 });
