@@ -9,6 +9,7 @@ const nameInputEl = document.getElementById("name-input");
 const cardNumberInputEl = document.getElementById("card-number-input");
 const cvvInputEl = document.getElementById("cvv-input");
 const payBtnEl = document.getElementById("pay-btn");
+const dismissBtnEl = document.getElementById("dismiss-btn");
 const yourOrderSectionEl = document.getElementById("your-order-section");
 
 let updatedTotalPrice = 0;
@@ -62,6 +63,10 @@ payBtnEl.addEventListener("click", function (e) {
     yourOrderSectionEl.style.height = "20px";
     renderMessage(name);
   }
+});
+
+dismissBtnEl.addEventListener("click", function () {
+  modalEl.style.display = "none"; // Vis modalen når knappen klikkes
 });
 
 function renderMessage(name) {
