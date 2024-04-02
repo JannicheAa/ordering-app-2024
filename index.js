@@ -115,8 +115,8 @@ function getCartItemListHtml(arr) {
   const numberOfOccurencesArr = getNumberOfOccurencesArr(arr);
   updateCartItemsList(arr);
   const arrayOfUniqueIds = cartItemsList.map((item) => item.id);
-  const totalPricePerItemTypeArr = arrayOfUniqueIds.map(function (id) {
-    const totalPricePerItem = arr.reduce(function (total, cur) {
+  const totalPricePerItemTypeArr = arrayOfUniqueIds.map((id) => {
+    const totalPricePerItem = arr.reduce((total, cur) => {
       if (cur.id === id) {
         return total + cur.price;
       } else return total;
